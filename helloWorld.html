@@ -5,10 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Github Work FLow</title>
   </head>
-  <body>
+  <body
+    style="
+      font-size: larger;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    "
+  >
     <h1>Here we are improving our knowledge in the github work flow.</h1>
     <p>I am making some changes in this project.</p>
     <p>This change in the project.</p>
     <p>It is also new line here.</p>
+
+    <h1>Creating new branch and Merging it.</h1>
+    <p>This will be merged with the main branch after wards.</p>
+    <p id="counter">0</p>
+    <button onclick="increase()">Press Me</button>
+
+    <script>
+      let count = 0;
+
+      function increase() {
+        count++;
+        document.getElementById("counter").textContent = count;
+      }
+    </script>
   </body>
 </html>
